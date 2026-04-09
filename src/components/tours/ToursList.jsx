@@ -26,6 +26,13 @@ export default function ToursList() {
   const [budget, setBudget] = useState("All");
   const [showFilters, setShowFilters] = useState(false);
 
+  // Sync category filter when URL param changes (e.g. from navbar dropdown)
+  useEffect(() => {
+    const cat = searchParams.get("category");
+    if (cat) setCategory(cat);
+    else setCategory("All");
+  }, [searchParams]);
+
   const filtered = tours.filter((t) => {
     const matchSearch =
       !search ||
