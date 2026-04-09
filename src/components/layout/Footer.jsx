@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Globe2, Phone, Mail, MapPin, Share2, Camera, Play, X } from "lucide-react";
+import { Globe2, Phone, Mail, MapPin, Share2, Camera, X } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -20,14 +20,16 @@ export default function Footer() {
             </p>
             <div className="flex gap-3">
               {[
-                { icon: Share2, href: "#" },
-                { icon: Camera, href: "#" },
-                { icon: Play, href: "#" },
-                { icon: X, href: "#" },
-              ].map(({ icon: Icon, href }) => (
+                { icon: Share2, href: "https://www.facebook.com/nmtindiaSangli", label: "Facebook" },
+                { icon: Camera, href: "https://www.instagram.com/nmt_india_holidays", label: "Instagram" },
+                { icon: X, href: "https://x.com/nmtindia_tours", label: "X" },
+              ].map(({ icon: Icon, href, label }) => (
                 <a
-                  key={href + Icon.displayName}
+                  key={label}
                   href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
                   className="w-8 h-8 bg-gray-700 hover:bg-orange-500 rounded-full flex items-center justify-center transition-colors"
                 >
                   <Icon className="w-4 h-4 text-white" />
@@ -45,7 +47,7 @@ export default function Footer() {
                 { label: "All Tours", to: "/tours" },
                 { label: "Domestic Tours", to: "/tours?category=Domestic" },
                 { label: "International Tours", to: "/tours?category=International" },
-                { label: "Admin Panel", to: "/admin" },
+                { label: "About Us", to: "/about" },
               ].map((l) => (
                 <li key={l.label}>
                   <Link
@@ -85,30 +87,31 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-orange-400 mt-0.5 shrink-0" />
-                <span>101 Travel House, Andheri West, Mumbai – 400053</span>
+                <span>Office No.106/107, First Floor, Shiv Platino, Opp. Khare Mangal Karyalaya Parking, Vishrambag, Sangli 416 415 (MS) INDIA</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-orange-400 shrink-0" />
-                <a href="tel:+919876543210" className="hover:text-orange-400 transition-colors">
-                  +91 98765 43210
-                </a>
+                <div className="flex flex-col gap-0.5">
+                  <a href="tel:+919697988891" className="hover:text-orange-400 transition-colors">+91 96979 88891</a>
+                  <a href="tel:+919697988893" className="hover:text-orange-400 transition-colors">+91 96979 88893</a>
+                </div>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-orange-400 shrink-0" />
-                <a href="mailto:hello@nmtindiaholidays.com" className="hover:text-orange-400 transition-colors">
-                  hello@nmtindiaholidays.com
+                <a href="mailto:info@nmtindiaholidays.com" className="hover:text-orange-400 transition-colors">
+                  info@nmtindiaholidays.com
                 </a>
               </li>
             </ul>
             <div className="mt-4 p-3 bg-green-900/40 rounded-lg border border-green-700/40">
               <p className="text-green-400 text-xs font-medium mb-1">WhatsApp Support</p>
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/919697988892"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-white hover:text-green-400 transition-colors"
               >
-                Chat with us →
+                Chat with us → +91 96979 88892
               </a>
             </div>
           </div>

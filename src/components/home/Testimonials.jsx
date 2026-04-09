@@ -10,10 +10,10 @@ export default function Testimonials() {
             Traveller Stories
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-4">
-            What Our Guests Say
+            Voices of Experience
           </h2>
           <p className="text-gray-500 max-w-xl mx-auto">
-            Real experiences from real travellers who explored the world with us.
+            Hear what our travellers say about their unforgettable journeys with NMT India Holidays.
           </p>
         </div>
 

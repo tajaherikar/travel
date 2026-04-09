@@ -1,10 +1,10 @@
-import { Shield, Headset, CreditCard, Users, Star, Award } from "lucide-react";
+import { Shield, Headset, CreditCard, Users, Globe2, Award } from "lucide-react";
 
 const stats = [
-  { icon: Users, value: "10,000+", label: "Happy Travellers" },
-  { icon: Star, value: "4.8/5", label: "Average Rating" },
-  { icon: Award, value: "50+", label: "Tours Offered" },
-  { icon: Shield, value: "100%", label: "Safe & Insured" },
+  { icon: Users, value: "25,000+", label: "Happy Travellers" },
+  { icon: Award, value: "300+", label: "Groups Organised" },
+  { icon: Globe2, value: "50+", label: "Destinations" },
+  { icon: Shield, value: "13+", label: "Years of Experience" },
 ];
 
 const whyUs = [

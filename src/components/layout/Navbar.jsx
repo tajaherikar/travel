@@ -19,6 +19,7 @@ export default function Navbar() {
     { to: "/tours", label: "Tours" },
     { to: "/tours?category=Domestic", label: "Domestic" },
     { to: "/tours?category=International", label: "International" },
+    { to: "/about", label: "About Us" },
   ];
 
   const navBg =
@@ -71,11 +72,11 @@ export default function Navbar() {
           {/* Actions */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="tel:+919876543210"
+              href="tel:+919697988891"
               className={`flex items-center gap-1 text-sm font-medium ${textColor} hover:text-orange-500 transition-colors`}
             >
               <Phone className="w-4 h-4" />
-              +91 98765 43210
+              +91 96979 88891
             </a>
             <Link
               to="/tours"
@@ -112,10 +113,10 @@ export default function Navbar() {
             ))}
             <div className="pt-3 border-t border-gray-100 flex flex-col gap-2">
               <a
-                href="tel:+919876543210"
+                href="tel:+919697988891"
                 className="text-gray-700 font-medium text-sm flex items-center gap-2"
               >
-                <Phone className="w-4 h-4" /> +91 98765 43210
+                <Phone className="w-4 h-4" /> +91 96979 88891
               </a>
               <Link
                 to="/tours"
