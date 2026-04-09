@@ -11,12 +11,12 @@ export default function Footer() {
             <Link to="/" className="flex items-center gap-2 mb-4">
               <Globe2 className="w-7 h-7 text-orange-400" />
               <span className="text-white text-xl font-bold">
-                Wander<span className="text-orange-400">India</span>
+                NMT <span className="text-orange-400">India Holidays</span>
               </span>
             </Link>
+            <p className="text-xs text-gray-500 mb-1">Northern Mediterranean Tourism India</p>
             <p className="text-sm leading-relaxed text-gray-400 mb-5">
-              Creating unforgettable journeys across India and Asia. Travel
-              more, worry less — we handle every detail.
+              Creating unforgettable journeys across India, Asia and the Mediterranean. Travel more, worry less — we handle every detail.
             </p>
             <div className="flex gap-3">
               {[
@@ -95,8 +95,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-orange-400 shrink-0" />
-                <a href="mailto:hello@wanderindia.com" className="hover:text-orange-400 transition-colors">
-                  hello@wanderindia.com
+                <a href="mailto:hello@nmtindiaholidays.com" className="hover:text-orange-400 transition-colors">
+                  hello@nmtindiaholidays.com
                 </a>
               </li>
             </ul>
@@ -115,7 +115,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-6 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
-          <p>© 2026 WanderIndia. All rights reserved.</p>
+          <p>© 2026 NMT India Holidays (Northern Mediterranean Tourism India). All rights reserved.</p>
           <div className="flex gap-4">
             <span className="hover:text-gray-300 cursor-pointer transition-colors">Privacy Policy</span>
             <span className="hover:text-gray-300 cursor-pointer transition-colors">Terms of Service</span>

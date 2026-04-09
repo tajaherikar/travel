@@ -45,7 +45,7 @@ export default function Navbar() {
             <span
               className={`text-xl font-bold tracking-tight ${textColor}`}
             >
-              Wander<span className={isHome && !scrolled ? "text-orange-300" : "text-orange-500"}>India</span>
+              NMT <span className={isHome && !scrolled ? "text-orange-300" : "text-orange-500"}>India Holidays</span>
             </span>
           </Link>
 
