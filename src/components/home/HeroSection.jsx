@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const slides = [
   {
-    img: "https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=1600&q=80",
+    img: "https://images.unsplash.com/photo-1643449416258-5c8e7ec598b1?q=80&w=1740&auto=format&fit=crop",
     title: "Incredible Kashmir",
     sub: "Snow-capped peaks, Dal Lake and valleys in bloom",
   },
