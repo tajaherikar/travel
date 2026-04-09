@@ -48,6 +48,7 @@ export default function Footer() {
                 { label: "Domestic Tours", to: "/tours?category=Domestic" },
                 { label: "International Tours", to: "/tours?category=International" },
                 { label: "About Us", to: "/about" },
+                { label: "Contact Us", to: "/contact" },
               ].map((l) => (
                 <li key={l.label}>
                   <Link

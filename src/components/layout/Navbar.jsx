@@ -20,6 +20,7 @@ export default function Navbar() {
     { to: "/tours?category=Domestic", label: "Domestic" },
     { to: "/tours?category=International", label: "International" },
     { to: "/about", label: "About Us" },
+    { to: "/contact", label: "Contact" },
   ];
 
   const navBg =

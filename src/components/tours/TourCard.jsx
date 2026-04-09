@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Calendar, Clock, MapPin, Star, Users } from "lucide-react";
+import { Calendar, Clock, MapPin, Star, UtensilsCrossed, BedDouble, Bus, Camera } from "lucide-react";
 
 function formatCurrency(amount) {
   return new Intl.NumberFormat("en-IN", {
@@ -88,6 +88,21 @@ export default function TourCard({ tour }) {
           {tour.stops.length > 4 && (
             <span className="text-xs text-gray-400">+{tour.stops.length - 4} more</span>
           )}
+        </div>
+
+        {/* Inclusions band */}
+        <div className="flex items-center justify-between bg-orange-50 rounded-xl px-4 py-2.5 mb-4">
+          {[
+            { icon: UtensilsCrossed, label: "Meals" },
+            { icon: BedDouble, label: "Stay" },
+            { icon: Bus, label: "Transport" },
+            { icon: Camera, label: "Sightseeing" },
+          ].map(({ icon: Icon, label }) => (
+            <div key={label} className="flex flex-col items-center gap-1">
+              <Icon className="w-4 h-4 text-orange-500" />
+              <span className="text-[10px] text-gray-500 font-medium">{label}</span>
+            </div>
+          ))}
         </div>
 
         <div className="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between">
