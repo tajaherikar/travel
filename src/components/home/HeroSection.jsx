@@ -4,9 +4,9 @@ import { useState } from "react";
 
 const slides = [
   {
-    img: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1600&q=80",
-    title: "Discover Bali",
-    sub: "Temples, beaches and rice terraces await",
+    img: "https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=1600&q=80",
+    title: "Incredible Kashmir",
+    sub: "Snow-capped peaks, Dal Lake and valleys in bloom",
   },
   {
     img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1600&q=80",
@@ -17,6 +17,11 @@ const slides = [
     img: "https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?w=1600&q=80",
     title: "Thailand Awaits",
     sub: "Tropical islands, temples and street food",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1600&q=80",
+    title: "Discover Bali",
+    sub: "Temples, beaches and rice terraces await",
   },
 ];
 
