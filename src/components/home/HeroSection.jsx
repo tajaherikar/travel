@@ -9,7 +9,7 @@ const slides = [
     sub: "Snow-capped peaks, Dal Lake and valleys in bloom",
   },
   {
-    img: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1600&q=80",
+    img: "https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1600&q=80",
     title: "Royal Rajasthan",
     sub: "Palaces, forts and golden deserts",
   },
